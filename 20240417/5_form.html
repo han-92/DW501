@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="input">
+      사용자 아이디:
+      <input type="text" name="user" placeholder="ID"/><br />
+      이메일 : <input type="email" name="email" required><br />
+      전화번호 : <input type="tel" name='tel' required
+      pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" title="010-1234-1234"><br />
+      <input type="submit" value="제출" />
+      <input type="reset" value="초기화" />
+    </form>
+    <br /><br />
+    <form enctype="multipart/form-data">
+      <input type="file" accept="image/jpeg,image/gif" />
+      <!-- 모든 이미지 확장자를 설정할 경우
+      <input type="file" accept="image/*" /> -->
+      <input type="hidden" value="hiddenValue" />
+    </form>
+    <br /><br />
+    <button onclick="alert('안녕하세요?')">눌러보세요!</button>
+    <br /><br />
+    고객의 의견<br />
+    <textarea name="feedback" rows="5" cols="50"></textarea>
+    <!-- rows : 엔터의 줄 수, cols : 입력칸 크기 -->
+  </body>
+</html>
